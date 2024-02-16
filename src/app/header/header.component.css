@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-item a:hover {
+    color: #ffd700; /* Changez la couleur selon vos préférences */
+  }
+  
+  /* Media Queries pour rendre le header responsive */
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar {
+      margin-top: 10px;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
