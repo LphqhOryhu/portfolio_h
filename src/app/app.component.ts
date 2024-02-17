@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,10 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'portfolio_h';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
+
+
