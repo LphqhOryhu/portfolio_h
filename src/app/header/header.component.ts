@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  optionChoisie: string | undefined; // Initialisez avec une valeur par défaut
 
+  setOption(option: string): void {
+    this.optionChoisie = option;
+  }
 }
