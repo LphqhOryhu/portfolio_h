@@ -1,8 +1,5 @@
-<head>
-  <link rel="stylesheet" type="text/css" href="../app/app.component.css">
-</head>
-<header><app-header></app-header></header>
-
+<app-header (toggleSidebar)="toggleSidebar()"></app-header>
+<app-sidebar [isOpen]="isSidebarOpen"></app-sidebar>
 <main class="main">
 
 </main>

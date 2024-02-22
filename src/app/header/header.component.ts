@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css'],
+  standalone: true,
 })
 export class HeaderComponent {
-  optionChoisie: string | undefined; // Initialisez avec une valeur par défaut
+  @Output() toggleSidebarEvent = new EventEmitter<void>();
 
-  setOption(option: string): void {
-    this.optionChoisie = option;
+  toggleSidebar() {
+    this.toggleSidebarEvent.emit();
   }
 }
